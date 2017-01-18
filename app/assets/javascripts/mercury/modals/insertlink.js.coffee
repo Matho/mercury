@@ -13,6 +13,8 @@
 
     @initializeForm()
 
+    Mercury.trigger('linkModalReady')
+
     # build the link on form submission
     @element.find('form').on 'submit', (event) =>
       event.preventDefault()
